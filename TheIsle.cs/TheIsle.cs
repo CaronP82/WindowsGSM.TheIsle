@@ -22,7 +22,7 @@ namespace WindowsGSM.Plugins
             author = "ksduster",
             description = "WindowsGSM plugin for supporting TheIsle Evrima Dedicated Server",
             version = "1.3.1",
-            url = "https://github.com/ksduster/WindowsGSM.TheIsle", // Github repository link (Best practice)
+            url = "https://github.com/CaronP82/WindowsGSM.TheIsle", // Github repository link (Best practice)
             color = "#34c9eb" // Color Hex
         };
 
@@ -78,7 +78,7 @@ namespace WindowsGSM.Plugins
                 {
                     using (WebClient webClient = new WebClient())
                     {
-                        await webClient.DownloadFileTaskAsync($"https://raw.githubusercontent.com/ksduster/The-Isle-Evrima-ini/main/Engine.ini", engineIniPath);
+                        await webClient.DownloadFileTaskAsync($"https://raw.githubusercontent.com/CaronP82/The-Isle/refs/heads/main/Engine.ini", engineIniPath);
                     }
                 }
                 catch (Exception e)
@@ -390,8 +390,8 @@ namespace WindowsGSM.Plugins
             }
 
             string downloadUrl = iniType == "Game" 
-                ? $"https://raw.githubusercontent.com/ksduster/The-Isle-Evrima-ini/main/Game.ini"
-                : $"https://raw.githubusercontent.com/ksduster/The-Isle-Evrima-ini/main/Engine.ini"; // Add Engine.ini URL here
+                ? $"https://raw.githubusercontent.com/CaronP82/The-Isle/refs/heads/main/Game.ini"
+                : $"https://raw.githubusercontent.com/CaronP82/The-Isle/refs/heads/main/Engine.ini"; // Add Engine.ini URL here
 
             try
             {
